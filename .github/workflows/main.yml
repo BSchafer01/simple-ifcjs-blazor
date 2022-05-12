@@ -42,9 +42,8 @@ jobs:
 
     - name: Commit to GitHub pages Repo
       if: success()
-      uses: JamesIves/github-pages-deploy-action@3.7.1
+      uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: release/wwwroot
+        branch: gh-pages
+        folder: release/wwwroot
         
