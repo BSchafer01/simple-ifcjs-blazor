@@ -25,8 +25,8 @@ jobs:
     #    base_href: BASE_URL or REPOSITORY_NAME
         
     # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
-    - name: Add .nojekyll file
-      run: touch ${{ env.PUBLISH_DIR }}/.nojekyll
+    #- name: Add .nojekyll file
+    #  run: touch ${{ env.PUBLISH_DIR }}/.nojekyll
 
     - name: Commit to GitHub pages Repo
       if: success()
