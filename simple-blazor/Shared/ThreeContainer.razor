@@ -1,0 +1,21 @@
+﻿@inject IJSRuntime JSRuntime
+
+<div id="threejscontainer" ></div>
+
+<div>
+    <div class="upload-container">
+      <div class="button-wrap">
+        <label class="button" for="file-input">Upload IFC File</label>
+        <input id="file-input" type="file" name="load">
+      </div>
+    </div>
+</div>
+
+@code {
+    private long maxFileSize = 1024 * 1024 * 25;
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JSRuntime.InvokeVoidAsync("Ifcjs_blazor.load");
+        await JSRuntime.InvokeVoidAsync("Ifcjs_blazor.listen");
+    }
+}
