@@ -25,6 +25,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Publish application
         run: dotnet publish -c Release
+        
       
       #Base href url value should be changed so that resources can load properly
       - name: Rewrite base href
