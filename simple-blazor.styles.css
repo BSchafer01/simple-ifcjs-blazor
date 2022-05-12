@@ -1,0 +1,219 @@
+/* /Pages/Index.razor.rz.scp.css */
+
+/* /Shared/MainLayout.razor.rz.scp.css */
+.page[b-rdmjdoayhm] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-rdmjdoayhm] {
+    flex: 1;
+}
+
+.sidebar[b-rdmjdoayhm] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-rdmjdoayhm] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-rdmjdoayhm]  a, .top-row[b-rdmjdoayhm]  .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+    .top-row[b-rdmjdoayhm]  a:hover, .top-row[b-rdmjdoayhm]  .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row[b-rdmjdoayhm]  a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-rdmjdoayhm] {
+        display: none;
+    }
+
+    .top-row.auth[b-rdmjdoayhm] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-rdmjdoayhm]  a, .top-row[b-rdmjdoayhm]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-rdmjdoayhm] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-rdmjdoayhm] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-rdmjdoayhm] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth[b-rdmjdoayhm]  a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row[b-rdmjdoayhm] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* /Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-hgxwhgdpi4] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.container-fluid[b-hgxwhgdpi4] {
+    text-align: center;
+    justify-content: center;
+    margin-block: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.navbar[b-hgxwhgdpi4]{
+    align-content: center;
+    margin-block: auto;
+
+}
+
+.top-row[b-hgxwhgdpi4] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-hgxwhgdpi4] {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    align-self: center;
+}
+
+.oi[b-hgxwhgdpi4] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-hgxwhgdpi4] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+
+
+.nav-item:first-of-type[b-hgxwhgdpi4] {
+    padding-top: 1rem;
+}
+
+    .nav-item:last-of-type[b-hgxwhgdpi4] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-hgxwhgdpi4]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 1.1rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-hgxwhgdpi4]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-hgxwhgdpi4]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-hgxwhgdpi4] {
+        display: none;
+    }
+
+    .collapse[b-hgxwhgdpi4] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}
+/* /Shared/ThreeContainer.razor.rz.scp.css */
+#threejscontainer[b-s7lxpvmpou] {
+    width: 80vw;
+    height: 80vh;
+    /*aspect-ratio: 16/9;*/
+    border: solid 2px black;
+    margin-inline: auto;
+}
+
+
+.upload-container[b-s7lxpvmpou] {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+input[type="file"][b-s7lxpvmpou] {
+    position: absolute;
+    z-index: -1;
+    top: 15px;
+    left: 3.8rem;
+    font-size: 17px;
+    color: #b8b8b8;
+}
+
+.button-wrap[b-s7lxpvmpou] {
+    position: relative;
+}
+
+.button[b-s7lxpvmpou] {
+    display: inline-block;
+    background-color: #1d6355;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+    width: fit-content;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+    .button:hover[b-s7lxpvmpou] {
+        background-color: #00ab97;
+    }
